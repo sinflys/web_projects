@@ -18,9 +18,9 @@ public class App {
 
 		System.out.println("가로길이 : " + win.getWidth());
 		System.out.println("세로길이 : " + win.getHeight());
-		System.out.println("보이는가 : " + win.getIsVisible());
-		System.out.println("높이 : " + win.getTop());
-		System.out.println("여백 : " + win.getLeft());
+		System.out.println("가시 유무 : " + win.getIsVisible());
+		System.out.println("위치 top : " + win.getTop());
+		System.out.println("위치 left : " + win.getLeft());
 	}
 
 }
