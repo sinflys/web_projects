@@ -2,7 +2,6 @@ package test; //테스트용 패키지
 
 import java.util.Random;
 
-import application.RandomWord;
 
 public class Test {
 
