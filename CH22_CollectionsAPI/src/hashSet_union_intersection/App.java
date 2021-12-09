@@ -35,7 +35,6 @@ public class App {
 		minus.removeAll(list2);
 		
 		minus.forEach(System.out::println);
-		System.out.println();
 	}
 
 }
