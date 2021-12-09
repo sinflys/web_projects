@@ -1,5 +1,7 @@
 package equals;
 
+import java.util.Objects;
+
 class Person {
 	private String name;	
 	public Person(String name) {
@@ -7,6 +9,17 @@ class Person {
 	}
 	public String toString() {
 		return name;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) //객체가 같을 경우
+			return true;
+		if (obj == null) //비교대상이 널값이면
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Person other = (Person) obj;
+		return Objects.deepEquals(name, other.name);
 	}
 }
 
