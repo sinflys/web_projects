@@ -29,7 +29,7 @@ public class App {
 		intersection.retainAll(list2); //리스트2에 중복되는 것들만 남김
 		
 		intersection.forEach(System.out::println);
-		System.out.println();
+		System.out.println(); 
 		
 		HashSet<String> minus = new HashSet<String>(list1);
 		minus.removeAll(list2);
