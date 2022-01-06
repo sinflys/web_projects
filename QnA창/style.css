@@ -59,11 +59,13 @@ h1 {
   margin: 0 35px 0 0;
 }
 
+/* 답변은 기본으로 안보이게 */
 .faq-text {
   display: none;
   margin: 30px 0 0;
 }
 
+/* active 클래스 있으면 답변 보이게 */
 .faq.active .faq-text {
   display: block;
 }
@@ -93,13 +95,14 @@ h1 {
   display: none;
 }
 
+/* active클래스가 같이 있으면 버튼 x표시는 보이게 */
 .faq.active .faq-toggle .fa-times {
   color: #fff;
-  display: block;
+  display: block; /* 보이게 */
 }
-
+/* active클래스가 같이 있으면 버튼 v표시는 안보이게 */
 .faq.active .faq-toggle .fa-chevron-down {
-  display: none;
+  display: none; /* 안 보이게 */
 }
 
 .faq.active .faq-toggle {
